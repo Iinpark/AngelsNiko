@@ -1,0 +1,16 @@
+@import 'search-and-phones.scss';
+
+header {
+  max-height: 163px;
+
+  font-family: Montserrat;
+  font-weight: $bold;
+
+  display: grid;
+  grid-template-columns: 200px minmax(700px, 1000px);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  grid-template-areas:
+    'logo search search'
+    'logo nav nav';
+}

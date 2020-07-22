@@ -1,0 +1,29 @@
+@include font-face(Droid, '../fonts/Droid', null, null, ttf);
+@include font-face(
+  Montserrat,
+  '../fonts/Montserrat/Montserrat-Bold',
+  $bold,
+  null,
+  ttf
+);
+@include font-face(
+  Montserrat,
+  '../fonts/Montserrat/Montserrat-Regular',
+  $regular,
+  null,
+  ttf
+);
+@include font-face(
+  Montserrat,
+  '../fonts/Montserrat/Montserrat-Light',
+  $light,
+  null,
+  ttf
+);
+@include font-face(
+  Montserrat,
+  '../fonts/Montserrat/Montserrat-ExtraBold',
+  $ultra-bold,
+  null,
+  ttf
+);

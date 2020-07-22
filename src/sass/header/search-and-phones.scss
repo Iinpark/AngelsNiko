@@ -1,0 +1,75 @@
+.search-and-phones {
+  grid-area: search;
+  .search-and-phones__content {
+    float: right;
+    display: flex;
+    align-content: center;
+
+    
+    .search-input {
+      border: solid;
+      border-color: $blue;
+      color: $blue;
+      border-radius: 18px;
+      border-width: 3px;
+
+      min-width: 428px;
+      min-height: 38px;
+
+      padding: 5px;
+      &[placeholder] {
+        color: $blue;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+
+    address a {
+      color: black;
+    }
+
+    //language switcher
+    ul {
+      list-style: none;
+      //   margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+      }
+    }
+
+    & > * {
+      margin: 0 25px;
+    }
+  }
+}
+
+.logo {
+  grid-area: logo;
+}
+
+nav {
+  grid-area: nav;
+
+  .nav-content {
+    float: right;
+    display: flex;
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin: 0 30px;
+      }
+      .nav-content__contains {
+        &:after {
+          content: '';
+          display: inline-block;
+          border: 5px solid transparent;
+          border-top: 8px solid black;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
