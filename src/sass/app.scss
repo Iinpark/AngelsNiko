@@ -3,9 +3,13 @@
 @import '_responsive';
 @import '_fonts';
 @import 'header/header.scss';
-@import 'banner/banner.scss';
-
+@import 'jumbotron/jumbotron.scss';
+@import 'services/services.scss';
 
 body {
   font-family: Montserrat;
+}
+
+.clearfix{
+  clear: both;
 }
