@@ -1,0 +1,33 @@
+.banner {
+  height: 600px;
+  background: right no-repeat;
+  background-image: url('../img/banner/banner-right.png');
+ 
+  padding: 30px 0;
+  margin: 15px 0;
+  .banner__content {
+    width: 50%;
+    h1 {
+      font-size: $font-size-5;
+      margin: 50px 0;
+      line-height: 1;
+    }
+    p {
+      font-size: $font-size-4;
+      margin: 50px 0;
+      line-height: 2;
+    }
+    button {
+      padding: 26px 50px;
+      background-color: $blue;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 50px;
+    }
+  }
+}
+
+.banner__image {
+  float: right;
+}

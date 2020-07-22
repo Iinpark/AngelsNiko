@@ -1,5 +1,11 @@
 @import '_mixins';
 @import '_variables';
 @import '_responsive';
-@import 'header/header.scss';
 @import '_fonts';
+@import 'header/header.scss';
+@import 'banner/banner.scss';
+
+
+body {
+  font-family: Montserrat;
+}
