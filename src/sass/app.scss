@@ -5,11 +5,12 @@
 @import 'header/header.scss';
 @import 'jumbotron/jumbotron.scss';
 @import 'services/services.scss';
+@import 'about.scss';
 
 body {
   font-family: Montserrat;
 }
 
-.clearfix{
+.clearfix {
   clear: both;
 }

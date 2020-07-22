@@ -5,11 +5,16 @@
     {% include 'templates/head.html' %}
   </head>
   <body>
-    <div class="content" style="max-width: 1400px; margin: auto;">
+    <div class="content" style="max-width: 1400px; margin: auto; padding:50px;">
       {% include 'templates/header.html' %}
-      {% include 'templates/jumbotron.html' %}
+      {% include
+      'templates/jumbotron.html' %}
 
+      <!-- четыре карточки с услугами -->
       {% include 'templates/services/services.html' %}
+
+      <!-- о компании и видео -->
+      {% include "templates/about.html" %}
 
       {% include 'templates/footer.html' %}
     </div>
