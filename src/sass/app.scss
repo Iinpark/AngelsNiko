@@ -6,9 +6,11 @@
 @import 'jumbotron/jumbotron.scss';
 @import 'services/services.scss';
 @import 'about.scss';
+@import './numbers/numbers.scss';
 
 body {
   font-family: Montserrat;
+  overflow-x: hidden;
 }
 
 .clearfix {

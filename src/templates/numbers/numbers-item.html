@@ -1,0 +1,16 @@
+{% macro ni(textAlign = "alignLeft", number = "0", desc = "description") %}
+
+  <div class="numbers-item {{textAlign}} ">
+    <p>
+      <span class="numbers-item__number  ">
+        {{number}}
+      </span>
+      <span class="numbers-item__description"
+      >
+        {{desc}}
+      </span
+    >
+    </p>
+  </div>
+
+{% endmacro %}

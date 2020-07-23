@@ -1,0 +1,23 @@
+.numbers-item {
+  p {
+    span {
+      display: block;
+    }
+  }
+}
+
+.numbers-item__number {
+  font-size: $font-size-6;
+  font-weight: $bold;
+}
+
+.numbers-item__description {
+  font-size: $font-size-4;
+}
+
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
+}

@@ -1,0 +1,26 @@
+@import './numbers-item.scss';
+
+.numbers__background {
+  width: 100vw;
+  min-height: 480px;
+
+  padding: 0 80px;
+  margin: auto;
+
+  color: white;
+
+  // 50px === padding for global wrapper
+  transform: translateX(-50px);
+
+  background: center center no-repeat;
+  background-image: url(../img/numbers/numbers__circle.png);
+  background-color: $blue;
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  //justify-items: center;
+  grid-template-areas:
+    'alignLeft  alignRight'
+    'alignLeft  alignRight';
+}
+
