@@ -1,0 +1,53 @@
+.follow-us {
+  padding: 30px 50px;
+  display: flex;
+  width: 100vw;
+  min-height: 200px;
+  transform: translateX(-50px);
+  color: white;
+  background-color: $blue;
+}
+
+.follow-us__content {
+  max-width: 50%;
+
+  h2 {
+    line-height: 1;
+    span {
+      display: block;
+      font-weight: $regular;
+    }
+  }
+}
+.follow-us__inputs {
+  width: 100%;
+
+  & > * {
+    display: block;
+    margin: 10px auto;
+  }
+
+  button {
+    padding: 20px 50px;
+    border: solid 5px white;
+    background-color: $blue;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px;
+  }
+
+  input {
+    color: $blue;
+
+    min-width: 428px;
+    min-height: 38px;
+
+    padding: 10px;
+    &[placeholder] {
+      color: $blue;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}
