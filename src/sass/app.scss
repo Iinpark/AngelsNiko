@@ -12,6 +12,7 @@
 @import './conferences/conferences.scss';
 @import './work-groups/work-groups.scss';
 @import './follow-us/follow-us.scss';
+@import 'footer';
 
 body {
   font-family: Montserrat;
@@ -20,4 +21,19 @@ body {
 
 .clearfix {
   clear: both;
+}
+
+.GlobalWrapper {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 50px;
+  padding-top: 50px;
+}
+
+.sign{
+  font-family: Consolas, mono;
+  text-align: center;
+  font-size: $font-size-1;
+  background-color: black;
+  color:$lightGray;
 }

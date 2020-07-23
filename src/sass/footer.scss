@@ -1,0 +1,33 @@
+footer {
+  background-image: url('../img/footer/FH_3.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  position: relative;
+}
+.contacts {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+
+  background-color: white;
+  width: 330px;
+  height: 330px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__body {
+  width: 300px;
+  height: 300px;
+  border: solid $lightGray 3px;
+  padding: 30px 40px;
+
+  a {
+    display: block;
+    color: black;
+    font-weight: $bold;
+  }
+}
+
