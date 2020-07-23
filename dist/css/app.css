@@ -364,11 +364,128 @@ header {
   grid-template-rows: repeat(3, 1fr);
   gap: 10px; }
 
+.work-groups {
+  min-height: 600px;
+  background-image: url("../img/work-groups/Dragon.png");
+  background-size: cover;
+  width: 100vw;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  padding: 50px;
+  color: white; }
+
+.work-groups__content {
+  max-width: 60%; }
+  .work-groups__content h3 {
+    font-size: 24px; }
+  .work-groups__content a {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 26px 30px;
+    border: solid 5px white;
+    background-color: #376f9e;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px; }
+
+.follow-us {
+  padding: 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  min-height: 200px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  color: white;
+  background-color: #376f9e; }
+
+.follow-us__content {
+  max-width: 50%; }
+  .follow-us__content h2 {
+    font-size: 36px;
+    line-height: 1; }
+    .follow-us__content h2 span {
+      font-size: 18px;
+      display: block;
+      font-weight: 400; }
+
+.follow-us__inputs {
+  width: 100%; }
+  .follow-us__inputs > * {
+    display: block;
+    margin: 10px auto; }
+  .follow-us__inputs button {
+    padding: 20px 50px;
+    border: solid 5px white;
+    background-color: #376f9e;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px; }
+  .follow-us__inputs input {
+    color: #376f9e;
+    min-width: 428px;
+    min-height: 38px;
+    padding: 10px; }
+    .follow-us__inputs input[placeholder] {
+      color: #376f9e;
+      font-size: 12px;
+      text-transform: uppercase; }
+
+footer {
+  background-image: url("../img/footer/FH_3.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  position: relative; }
+
+.contacts {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  background-color: white;
+  width: 330px;
+  height: 330px;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.contacts__body {
+  width: 300px;
+  height: 300px;
+  border: solid #d1d7e0 3px;
+  padding: 30px 40px; }
+  .contacts__body a {
+    display: block;
+    color: black;
+    font-weight: 700; }
+
 body {
   font-family: Montserrat;
   overflow-x: hidden; }
 
 .clearfix {
   clear: both; }
+
+.GlobalWrapper {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 50px;
+  padding-top: 50px; }
+
+.sign {
+  font-family: Consolas, mono;
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
+  color: #d1d7e0; }
 
 /*# sourceMappingURL=maps/app.css.map */
