@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/**
+  Переменные для отступов
+ */
+/**
+  Переменные для цветов
+ */
+/**
+  Переменные для шрифтов
+ */
+/**
+Веса шрифтов
+*/
+.container {
+  max-width: 1400px; }
+
+/**
+  Десктоп маленький
+ */
+/**
+  Планшет горизонтальный
+ */
+@media screen and (max-width: 1279px) {
+  .container {
+    max-width: 100%; } }
+
+/**
+  Планшет вертикальный
+ */
+/**
+  Мобильные устройства
+ */
+@font-face {
+  font-family: "Droid";
+  font-display: swap;
+  src: url("../fonts/Droid.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype"); }
+
+.search-and-phones {
+  grid-area: search; }
+  .search-and-phones .search-and-phones__content {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+    .search-and-phones .search-and-phones__content .search-input {
+      border: solid;
+      border-color: #376f9e;
+      color: #376f9e;
+      border-radius: 18px;
+      border-width: 3px;
+      min-width: 428px;
+      min-height: 38px;
+      padding: 5px; }
+      .search-and-phones .search-and-phones__content .search-input[placeholder] {
+        color: #376f9e;
+        font-size: 12px;
+        text-transform: uppercase; }
+    .search-and-phones .search-and-phones__content address a {
+      color: black; }
+    .search-and-phones .search-and-phones__content ul {
+      list-style: none;
+      padding: 0; }
+      .search-and-phones .search-and-phones__content ul li {
+        display: inline-block; }
+    .search-and-phones .search-and-phones__content > * {
+      margin: 0 25px; }
+
+.logo {
+  grid-area: logo; }
+
+nav {
+  grid-area: nav; }
+  nav .nav-content {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    nav .nav-content ul {
+      list-style: none; }
+      nav .nav-content ul li {
+        display: inline-block;
+        margin: 0 30px; }
+      nav .nav-content ul .nav-content__contains:after {
+        content: '';
+        display: inline-block;
+        border: 5px solid transparent;
+        border-top: 8px solid black;
+        margin-left: 5px; }
+
+header {
+  max-height: 163px;
+  font-family: Montserrat;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 200px minmax(700px, 1000px);
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-areas: 'logo search search' 'logo nav nav'; }
+
+.banner {
+  height: 600px;
+  background: right no-repeat;
+  background-image: url("../img/banner/banner-right.png");
+  padding: 30px 0;
+  margin: 15px 0; }
+  .banner .banner__content {
+    width: 50%; }
+    .banner .banner__content h1 {
+      font-size: 36px;
+      margin: 50px 0;
+      line-height: 1; }
+    .banner .banner__content p {
+      font-size: 24px;
+      margin: 50px 0;
+      line-height: 2; }
+    .banner .banner__content button {
+      padding: 26px 50px;
+      background-color: #376f9e;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 50px;
+      letter-spacing: 3px; }
+
+.banner__image {
+  float: right; }
+
+.service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  min-height: 200px;
+  max-height: 330px; }
+  .service-card img {
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.service-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 15px;
+  max-width: 50%; }
+  .service-card__content h3 {
+    font-weight: 700; }
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 32px 0;
+  padding: 8px 0;
+  min-height: 400px; }
+
+.about__article {
+  max-width: 50%;
+  display: inline-block; }
+  .about__article h2 {
+    color: #376f9e;
+    font-weight: 700; }
+
+.about__video {
+  width: 50%; }
+  .about__video > .content {
+    height: 91.5%;
+    background-color: #376f9e; }
+
+.numbers-item p span {
+  display: block; }
+
+.numbers-item__number {
+  font-size: 42px;
+  font-weight: 700; }
+
+.numbers-item__description {
+  font-size: 24px; }
+
+.alignLeft {
+  text-align: left; }
+
+.alignRight {
+  text-align: right; }
+
+.numbers__background {
+  width: 100vw;
+  min-height: 480px;
+  padding: 0 80px;
+  margin: auto;
+  color: white;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: center center no-repeat;
+  background-image: url(../img/numbers/numbers__circle.png);
+  background-color: #376f9e;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template-areas: 'alignLeft  alignRight' 'alignLeft  alignRight'; }
+
+body {
+  font-family: Montserrat;
+  overflow-x: hidden; }
+
+.clearfix {
+  clear: both; }
+
+/*# sourceMappingURL=maps/app.css.map */
