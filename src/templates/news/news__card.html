@@ -1,0 +1,10 @@
+{% macro news__card( date = "12.12.12", header = "Заголовок", content =
+"контент") %}
+
+<div class="news__card">
+  <span> {{date}} </span>
+  <h3>{{header}}</h3>
+
+  <p>{{content}}</p>
+</div>
+{% endmacro %}
