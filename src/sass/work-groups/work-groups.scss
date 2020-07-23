@@ -1,0 +1,31 @@
+.work-groups {
+  min-height: 600px;
+
+  background-image: url('../img/work-groups/Dragon.png');
+  background-size: cover;
+
+  width: 100vw;
+  transform: translateX(-50px);
+  padding: 50px;
+
+  color: white;
+}
+
+.work-groups__content {
+  max-width: 60%;
+
+  h3{
+      font-size: $font-size-4;
+  }
+  a {
+    display: block;
+    width: fit-content;
+    padding: 26px 30px;
+    border: solid 5px white;
+    background-color: $blue;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px;
+  }
+}
