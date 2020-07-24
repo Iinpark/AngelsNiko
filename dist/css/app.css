@@ -224,17 +224,17 @@ header {
 .alignRight {
   text-align: right; }
 
+.numbers {
+  background: center center no-repeat;
+  background-image: url(../img/numbers/numbers__circle.png);
+  background-color: #376f9e; }
+
 .numbers__background {
-  width: 100vw;
+  max-width: 1080px;
   min-height: 480px;
   padding: 0 80px;
   margin: auto;
   color: white;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: center center no-repeat;
-  background-image: url(../img/numbers/numbers__circle.png);
-  background-color: #376f9e;
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
   -webkit-box-align: center;
@@ -242,6 +242,23 @@ header {
           align-items: center; }
 
 .contact-us {
+  background-image: url("../img/contact-us/contact-us__artboard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 200px;
+  padding: 60px 50px; }
+  .contact-us button {
+    padding: 26px 30px;
+    background-color: #376f9e;
+    border: solid white 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px; }
+
+.contact-us__body {
+  max-width: 1080px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,21 +268,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: contain cover no-repeat;
-  background-image: url("../img/contact-us/contact-us__artboard.png");
-  width: 100vw;
-  min-height: 200px;
-  padding: 60px 50px;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px); }
-  .contact-us button {
-    padding: 26px 30px;
-    background-color: #376f9e;
-    border: solid white 10px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 50px;
-    letter-spacing: 3px; }
+  margin: auto; }
 
 .contact-us__content {
   width: 65%; }
@@ -323,11 +326,7 @@ header {
   min-height: 670px;
   background: no-repeat;
   background-image: url(../img/conferences/conferences__artboard.png);
-  background-size: cover;
-  width: 100vw;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  padding: 50px; }
+  background-size: cover; }
 
 .fin-school {
   display: -webkit-box;
@@ -368,9 +367,6 @@ header {
   min-height: 600px;
   background-image: url("../img/work-groups/Dragon.png");
   background-size: cover;
-  width: 100vw;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
   padding: 50px;
   color: white; }
 
@@ -396,10 +392,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   min-height: 200px;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
   color: white;
   background-color: #376f9e; }
 
@@ -470,7 +463,8 @@ footer {
 
 body {
   font-family: Montserrat;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: auto; }
 
 .clearfix {
   clear: both; }

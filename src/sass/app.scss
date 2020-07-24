@@ -17,6 +17,7 @@
 body {
   font-family: Montserrat;
   overflow-x: hidden;
+  margin: auto;
 }
 
 .clearfix {
@@ -30,10 +31,10 @@ body {
   padding-top: 50px;
 }
 
-.sign{
+.sign {
   font-family: Consolas, mono;
   text-align: center;
   font-size: $font-size-1;
   background-color: black;
-  color:$lightGray;
+  color: $lightGray;
 }
